@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: auto;
+    padding: auto;
+    background-image: url();
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: #2f2f2f;
+    padding: 3px;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(49, 49, 49, 0.1);
+    width: 100%;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-top: 5px;
+    margin-left: 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1C658C;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: 0 0 5px #364e68, 0 0 10px #132238;
+    transition: 0.5s ease;
+}
+
+main{
+    margin: 0 10px;
+}
+
+#about{
+    display: flex;
+    margin: 0 10px 5px 10px;
+}
+
+article .image{
+    width: 100%;
+    margin: auto;
+}
+
+article .content1{
+    width: 90%;
+    margin: auto;
+
+}
+
+article .content1 h3{
+    color: rgb(90, 90, 90);
+    font-size: 20px;
+    margin: 3px;
+}
+
+article .content1 h2{
+    font-size: 36px;
+    margin: 3px;
+}
+
+article .content1 p{
+    font-size: 20px;
+    margin: 3px;
+}
+
+.content1 button {
+    background-color: #000000;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.content1 button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.content1 button:hover {
+    background-color: #4cbffd ;
+    color: white;
+    transition: 0.5s ease;
+    
+}
+
+article #skill {
+    margin: 10px;
+}
+
+#skill h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.card {
+    padding: 40px;
+    background-color: #2f2f2f;
+    margin: 10px;
+    width: 18%;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content2 img {
+    width: 95%;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.content2 img:hover {
+    width: 100%;
+    transition: 0.3s linear;
+}
+
+.content2 h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+fieldset {
+    background-color: #2f2f2f;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: white;
+}
+
+fieldset h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+fieldset p {
+    font-size:  20px;
+    text-align: center;
+}
+
+fieldset label {
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+input[type="text"],[type="email"] {
+    width: 97.8%;
+    padding: 15px;
+    margin: 5px 0px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+textarea {
+    width: 100%;
+    margin: 5px 0px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+form button {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    width: 100px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #4cbffd ;
+    color: white;
+    transition: 0.5s ease;
+    
+}
+
+footer {
+    background-color: #2f2f2f;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        width: 90%;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    article .image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content2 {
+        width: 90%;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .content2 .card {
+        width: 100%;
+        padding: 0;
+        margin-right: 20px;
+    }
+}
